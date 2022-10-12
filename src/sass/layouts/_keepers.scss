@@ -14,8 +14,13 @@
       flex-direction: column;
       margin-bottom: 10rem;
    }
+
    @include responsive(small-medium){
       margin: 15rem 12rem;
+      height: auto;
+   }
+   @include responsive(extra-small){
+      margin: 15rem 7rem;
       height: auto;
    }
    
