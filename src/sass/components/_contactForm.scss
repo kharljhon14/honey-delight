@@ -1,0 +1,64 @@
+.form {
+   flex: 0 0 50%;
+   background: $color-primary-light;
+   padding: 3rem 4rem;
+   border-radius: 0.8rem;
+   opacity: 0;
+   transition: opacity 1.5s ease-out;
+   // box-shadow: 1rem 1rem 0rem $color-primary-dark;
+
+   @include responsive(small-medium){
+   flex: 0 0 85%;
+
+   }
+
+   &__header {
+      font-weight: 400;
+      text-align: center;
+      text-transform: uppercase;
+   }
+
+   &__input {
+      position: relative;
+      margin: 2rem 0 4rem;
+      width: 100%;
+
+      & input {
+         background-color: transparent;
+         border: none;
+         border-bottom: 2px solid #000;
+         display: block;
+         width: 100%;
+         padding: 1.5rem 0;
+         font-size: 1.75rem;
+         color: $color-secondary-dark;
+
+         &:focus,
+         &:valid {
+            outline: none;
+         }
+      }
+
+      & label {
+         font-size: 1.7rem;
+         font-weight: 300;
+      }
+   }
+
+   &__btn {
+      display: inline-block;
+      width: 100%;
+      background-color: $color-primary-dark;
+      color: currentColor;
+      padding: 1.5rem;
+      font-family: inherit;
+      font-size: 1.6rem;
+      border: none;
+      border-radius: 0.8rem;
+      cursor: pointer;
+   }
+}
+
+.fadeIn {
+   opacity: 1;
+}
